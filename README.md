@@ -9,6 +9,10 @@
 ## Extensions
 
 - Prettier
+- image preview
+- color highlight
+- auto rename tag
+- live server
 
 ## Settings
 
@@ -24,3 +28,7 @@
 ## Course Material
 
 - [The Course Material](https://github.com/PacktPublishing/React-Native-4-in-a-Day)
+
+## Document for web technologies
+
+- [MDN](https://developer.mozilla.org/en-US/)
