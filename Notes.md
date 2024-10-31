@@ -13,6 +13,8 @@
   - [Usage Example](#usage-example)
   - [Semantic HTML](#semantic-html)
   - [Why We Need Semantic HTML](#why-we-need-semantic-html)
+- [CSS](#css)
+  - [How a piece of CSS code looks like](#how-a-piece-of-css-code-looks-like)
 
 ## HTML
 
@@ -130,3 +132,23 @@ Entities ensure your HTML content is displayed as you intend, even if it include
 4. **Consistent Styling**: It enables consistent styling and layout by applying styles to specific elements (e.g., `<header>` or `<nav>`), rather than using classes or IDs alone.
 
 Using semantic HTML aligns the structure of a page with its meaning, creating a clearer hierarchy that benefits both humans and machines interacting with the content.
+
+## CSS
+
+- Cascading Style sheets
+- CSS describes the visual style and presentation of the content written in HTML
+- CSS consists of countless properties that developers use to format the content: properties about font, text, spacing, layout, etc.
+
+### How a piece of CSS code looks like
+
+```css
+h1 {
+  color: blue;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* h1 is selector */
+/* font-size: 20px; is declaration/style */
+/* h1 is selector */
+```
