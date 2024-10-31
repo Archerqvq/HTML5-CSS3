@@ -38,7 +38,7 @@ Attributes are basically pieces of data, which we can use to describe elements.
 ### Alt attribute of \<img>
 
 - Allow search engines such as Google Chrome to actually
-  knwo what is in the image because without this description, search engines dont's really have a know of knowing what the image is actually about.
+  know what is in the image because without this description, search engines dont's really have a know of knowing what the image is actually about.
 - More important is that by specifying the description of the image, we can also allow blind people to use a website. So users who can use a screen reader will not see the image but instead they will have the screen reader read the alternative text to them **(This is the meaning of technology)**.
 
 ### Meta elements inside the head with attribute charset
