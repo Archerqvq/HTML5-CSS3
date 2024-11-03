@@ -15,6 +15,15 @@
   - [Why We Need Semantic HTML](#why-we-need-semantic-html)
 - [CSS](#css)
   - [How a piece of CSS code looks like](#how-a-piece-of-css-code-looks-like)
+  - [Three types of CSS](#three-types-of-css)
+  - [Inheritance](#inheritance)
+  - [Color model](#color-model)
+    - [Shades of grey](#shades-of-grey)
+  - [Pseudo Classes](#pseudo-classes)
+  - [Developer tools / DevTools](#developer-tools--devtools)
+    - [Google Chrome DevTools](#google-chrome-devtools)
+  - [Priority of CSS selector](#priority-of-css-selector)
+    - [Ignore the priority of CSS selector](#ignore-the-priority-of-css-selector)
 
 ## HTML
 
@@ -149,6 +158,60 @@ h1 {
 }
 
 /* h1 is selector */
-/* font-size: 20px; is declaration/style */
-/* h1 is selector */
+/* font-size is called the property, and 20px here is the value that we declare for that size property*/
+/* font-size: 20px; that value and property go together is a declaration/style */
+/* Then all of these declarations or styles together make up the declaration block(h1 is not included)*/
+
+/* both the selector plus the declaration block is what we called a CSS rule*/
+```
+
+### Three types of CSS
+
+- Inline CSS
+- Internal CSS
+- External CSS
+
+### Inheritance
+
+Inheritance is a mechanism, by which some styles, some properties, get values inherited from parent elements to child elements.
+
+![Inheritance example](./notes_img/Inheritance%20example.png)
+
+### Color model
+
+- RGB
+- RGBA
+- HSL
+- HSLA
+- HEX
+
+#### Shades of grey
+
+- When colors in all 3 channels are same, it is called grey color.
+- There are 256 pure grays to choose from. Such as rgb(0, 0, 0) or rgb(255, 255, 255) are respectively pure balck and pure white.
+  And rgb(128, 128, 128) is a shade of grey.
+
+### Pseudo Classes
+
+### Developer tools / DevTools
+
+#### Google Chrome DevTools
+
+- F12
+- Right click on the page and select inspect
+
+### Priority of CSS selector
+
+![Priority of CSS selector](./notes_img/priority_for_selectors.png)
+
+#### Ignore the priority of CSS selector
+
+- !important
+
+Example code like below will override the color:
+
+```css
+footer p {
+  color: green !important;
+}
 ```
