@@ -24,6 +24,9 @@
     - [Google Chrome DevTools](#google-chrome-devtools)
   - [Priority of CSS selector](#priority-of-css-selector)
     - [Ignore the priority of CSS selector](#ignore-the-priority-of-css-selector)
+  - [The CSS box model](#the-css-box-model)
+    - [Element size calculation](#element-size-calculation)
+  - [Collaping margins](#collaping-margins)
 
 ## HTML
 
@@ -215,3 +218,19 @@ footer p {
   color: green !important;
 }
 ```
+
+### The CSS box model
+
+The box model defines how elements are displayed on a webpage and how they are sized.
+
+Every element on a webpage can be seen as a rectangular box and each of these boxes can have content, a border and space inside and outside of it.
+
+![The css box model](./notes_img/the%20css%20box%20model.png)
+
+#### Element size calculation
+
+![Element height and width calculation](./notes_img/element%20height%20and%20width%20calculation.png)
+
+### Collaping margins
+
+When we have two margins that occupy the same space, only one of them is actaully visible on the page and that is usually the larger of the two.

@@ -1,15 +1,58 @@
 /* Select all the elements on the page */
 /* Universal selector is the lowest priority, so it would be very esay to override*/
 * {
-  border-top: 10px solid #1098ad;
+  /* border-top: 10px solid #1098ad; */
+
+  /* Global reset to all elements in the webpage */
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: sans-serif;
   color: #444;
 
-  /* Border can not get inherited by the child elements */
+  /* Border can not get inherited by the child elements as the same as margin and padding */
   border-top: 10px solid #1098ad;
+}
+
+.container {
+  width: 800px;
+  /* The margin on the and right will be the same */
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  /* Shorthand form */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+nav {
+  font-size: 18px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.poset-header {
+  margin-bottom: 30px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  width: 500px;
 }
 
 h1,
@@ -26,10 +69,13 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -41,10 +87,22 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5; /* 1.5 times the font size */
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 li {
   font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 /* This's a descendant selector and the p element is inside the footer element, so the p element is the child of the footer element. */
@@ -76,16 +134,6 @@ li {
 
 .related {
   list-style: none;
-}
-
-.main-header {
-  background-color: #f7f7f7;
-}
-
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
 }
 
 body {
@@ -137,6 +185,13 @@ a:hover {
   text-decoration: underline orangered;
 }
 
+.post-img {
+  /* 100% of the width means that it will be 100% of the parent element */
+  /* The img will automatically adjust its height when the size of the parent element changes, and this is very important to building responsive websites. */
+  width: 100%;
+  height: auto;
+}
+
 /* LVHA for the pseudo classes of anchor elements*/
 
 /* Resolving conflicts */
@@ -160,7 +215,3 @@ footer p {
 nav p {
   font-size: 18px;
 } */
-
-nav {
-  font-size: 18px;
-}
