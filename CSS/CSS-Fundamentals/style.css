@@ -18,7 +18,7 @@ body {
 
 .container {
   width: 800px;
-  /* The margin on the and right will be the same */
+  /* The margin on the left and right will be the same */
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
