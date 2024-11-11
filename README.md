@@ -32,3 +32,8 @@
 ## Document for web technologies
 
 - [MDN](https://developer.mozilla.org/en-US/)
+
+## Tools
+
+- [Markup Validation Service Check the markup (HTML, XHTML, …) of Web documents](https://validator.w3.org/#validate_by_input)
+- [Find the difference between two text files](https://www.diffchecker.com/)

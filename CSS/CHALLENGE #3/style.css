@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.4;
+}
+
+/* PRODUCT */
+.product {
+    border: 4px solid black;
+    width: 825px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.product-title {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    background-color: #f7f7f7;
+    padding: 15px;
+}
+
+/* PRODUCT INFORMATION */
+.price {
+    font-size: 24px;
+}
+
+.shipping {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #777;
+    padding-bottom: 20px;
+}
+
+.sale {
+    background-color: #ec2f2f;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 7px 15px;
+
+    /* First way to make the element only occupies the space of its content */
+    display: inline-block;
+
+    /* Second way to do so */
+    /* width: 40px;
+    text-align: center; */
+
+    position: absolute;
+    top: -17px;
+    left: -38px;
+    letter-spacing: 2px;
+}
+
+.more-info:link,
+.more-info:visited {
+    color: black;
+    /* The anchor element is an inline element and on inline elements, the top and margin bottoms do not apply */
+    /* So if we want to make it works, we need to change the inline element to a inline-block element */
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.more-info:hover,
+.more-info:active {
+    text-decoration: none;
+}
+
+.color {
+    background-color: #000;
+    /* height and width are not applied to inline elements */
+    height: 22px;
+    width: 22px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.color-blue {
+    background-color: #2f6ee2;
+}
+
+.color-red {
+    background-color: #ec2f2f;
+}
+
+.color-yellow {
+    background-color: #f0bf1e;
+}
+
+.color-green {
+    background-color: #90cc20;
+}
+
+.color-brown {
+    background-color: #885214;
+}
+
+/* PRODUCT DETAILS */
+.details-title {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.details-list {
+    list-style: square;
+    margin-left: 20px;
+}
+
+/* Descendant Selectors */
+.details-list li {
+    margin-bottom: 10px;
+}
+
+/* BUTTON */
+.add-cart {
+    background-color: #000;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px;
+    /* Set width to 100% that makes the button full width as its parent element article*/
+    width: 100%;
+    border-top: 4px solid black;
+}
+
+.add-cart:hover {
+    color: #000;
+    background-color: #fff;
+}

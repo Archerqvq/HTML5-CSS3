@@ -23,6 +23,7 @@
   - [Developer tools / DevTools](#developer-tools--devtools)
     - [Google Chrome DevTools](#google-chrome-devtools)
   - [Priority of CSS selector](#priority-of-css-selector)
+  - [CSS specificity](#css-specificity)
     - [Ignore the priority of CSS selector](#ignore-the-priority-of-css-selector)
   - [The CSS box model](#the-css-box-model)
     - [Element size calculation](#element-size-calculation)
@@ -33,14 +34,14 @@
 
 ## HTML
 
-- HyperText Markup Language
-- HTML is a markup language that web developers use to structure and describe the content of a webpage (not a programming language)
-- HTML consists of elements that describe different types of content:paragraphs, links, headings, images, video, etc.
-- Web browsers understand HTML and render HTML code as websites
+-   HyperText Markup Language
+-   HTML is a markup language that web developers use to structure and describe the content of a webpage (not a programming language)
+-   HTML consists of elements that describe different types of content:paragraphs, links, headings, images, video, etc.
+-   Web browsers understand HTML and render HTML code as websites
 
 ### HTML Elements
 
-- Definition: [HTML Elements](https://www.w3schools.com/html/html_elements.asp#:~:text=The%20HTML%20element%20is%20everything,My%20First%20Heading)
+-   Definition: [HTML Elements](https://www.w3schools.com/html/html_elements.asp#:~:text=The%20HTML%20element%20is%20everything,My%20First%20Heading)
 
 ### \<!DOCTYPE HTML5>
 
@@ -54,9 +55,9 @@ Attributes are basically pieces of data, which we can use to describe elements.
 
 ### Alt attribute of \<img>
 
-- Allow search engines such as Google Chrome to actually
-  know what is in the image because without this description, search engines dont's really have a know of knowing what the image is actually about.
-- More important is that by specifying the description of the image, we can also allow blind people to use a website. So users who can use a screen reader will not see the image but instead they will have the screen reader read the alternative text to them **(This is the meaning of technology)**.
+-   Allow search engines such as Google Chrome to actually
+    know what is in the image because without this description, search engines dont's really have a know of knowing what the image is actually about.
+-   More important is that by specifying the description of the image, we can also allow blind people to use a website. So users who can use a screen reader will not see the image but instead they will have the screen reader read the alternative text to them **(This is the meaning of technology)**.
 
 ### Meta elements inside the head with attribute charset
 
@@ -89,10 +90,10 @@ MDN, short for **Mozilla Developer Network**, is an open-source platform providi
 
 Some of the resources you’ll find on MDN include:
 
-- **Documentation** for core web languages and APIs, such as HTML, CSS, JavaScript, and DOM manipulation.
-- **Interactive examples and code snippets** to help visualize concepts and test code directly in the browser.
-- **Tutorials and guides** on web development topics, covering everything from basic syntax to advanced programming practices.
-- **Browser compatibility tables** for each language or feature, detailing how different web browsers support them.
+-   **Documentation** for core web languages and APIs, such as HTML, CSS, JavaScript, and DOM manipulation.
+-   **Interactive examples and code snippets** to help visualize concepts and test code directly in the browser.
+-   **Tutorials and guides** on web development topics, covering everything from basic syntax to advanced programming practices.
+-   **Browser compatibility tables** for each language or feature, detailing how different web browsers support them.
 
 MDN is regularly updated by contributors, ensuring that it reflects the latest standards and best practices in web development.
 
@@ -104,29 +105,29 @@ HTML **entities** are special codes that represent reserved characters (like `<`
 
 Some characters, such as `<` and `>`, have special meanings in HTML (they're used for tags). If you want to display these characters as text rather than part of the HTML structure, you need to use entities. For example:
 
-- `<` should be written as `&lt;`
-- `>` should be written as `&gt;`
-- `&` should be written as `&amp;`
+-   `<` should be written as `&lt;`
+-   `>` should be written as `&gt;`
+-   `&` should be written as `&amp;`
 
 ### Common HTML Entities Examples
 
-- **Special characters**:
-  - `<` = `&lt;`
-  - `>` = `&gt;`
-  - `&` = `&amp;`
-- **Non-keyboard characters**:
-  - `©` = `&copy;`
-  - `®` = `&reg;`
-  - `€` = `&euro;`
-- **Spacing characters**:
-  - ` ` (non-breaking space) = `&nbsp;`
+-   **Special characters**:
+    -   `<` = `&lt;`
+    -   `>` = `&gt;`
+    -   `&` = `&amp;`
+-   **Non-keyboard characters**:
+    -   `©` = `&copy;`
+    -   `®` = `&reg;`
+    -   `€` = `&euro;`
+-   **Spacing characters**:
+    -   ` ` (non-breaking space) = `&nbsp;`
 
 ### Usage Example
 
 ```html
 <p>
-  Use &lt; and &gt; to write HTML tags in plain text without them being
-  rendered.
+    Use &lt; and &gt; to write HTML tags in plain text without them being
+    rendered.
 </p>
 <p>&copy; 2024 OpenAI</p>
 ```
@@ -150,17 +151,17 @@ Using semantic HTML aligns the structure of a page with its meaning, creating a 
 
 ## CSS
 
-- Cascading Style sheets
-- CSS describes the visual style and presentation of the content written in HTML
-- CSS consists of countless properties that developers use to format the content: properties about font, text, spacing, layout, etc.
+-   Cascading Style sheets
+-   CSS describes the visual style and presentation of the content written in HTML
+-   CSS consists of countless properties that developers use to format the content: properties about font, text, spacing, layout, etc.
 
 ### How a piece of CSS code looks like
 
 ```css
 h1 {
-  color: blue;
-  text-align: center;
-  font-size: 20px;
+    color: blue;
+    text-align: center;
+    font-size: 20px;
 }
 
 /* h1 is selector */
@@ -173,9 +174,9 @@ h1 {
 
 ### Three types of CSS
 
-- Inline CSS
-- Internal CSS
-- External CSS
+-   Inline CSS
+-   Internal CSS
+-   External CSS
 
 ### Inheritance
 
@@ -185,17 +186,17 @@ Inheritance is a mechanism, by which some styles, some properties, get values in
 
 ### Color model
 
-- RGB
-- RGBA
-- HSL
-- HSLA
-- HEX
+-   RGB
+-   RGBA
+-   HSL
+-   HSLA
+-   HEX
 
 #### Shades of grey
 
-- When colors in all 3 channels are same, it is called grey color.
-- There are 256 pure grays to choose from. Such as rgb(0, 0, 0) or rgb(255, 255, 255) are respectively pure balck and pure white.
-  And rgb(128, 128, 128) is a shade of grey.
+-   When colors in all 3 channels are same, it is called grey color.
+-   There are 256 pure grays to choose from. Such as rgb(0, 0, 0) or rgb(255, 255, 255) are respectively pure balck and pure white.
+    And rgb(128, 128, 128) is a shade of grey.
 
 ### Pseudo Classes
 
@@ -203,22 +204,28 @@ Inheritance is a mechanism, by which some styles, some properties, get values in
 
 #### Google Chrome DevTools
 
-- F12
-- Right click on the page and select inspect
+-   F12
+-   Right click on the page and select inspect
 
 ### Priority of CSS selector
 
 ![Priority of CSS selector](./notes_img/priority_for_selectors.png)
 
+If one selector if more complex than the other, then many times, it's actually the more complex one that get applied.
+
+### CSS specificity
+
+Specificity is the algorithm used by browsers to determine the CSS declaration that is the most relevant to an element, which in turn, determines the property value to apply to the element. The specificity algorithm calculates the weight of a CSS selector to determine which rule from competing CSS declarations gets applied to an element.
+
+-   [CSS specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
+
 #### Ignore the priority of CSS selector
 
-- !important
-
-Example code like below will override the color:
+-   !important
 
 ```css
 footer p {
-  color: green !important;
+    color: green !important;
 }
 ```
 
@@ -240,8 +247,8 @@ When we have two margins that occupy the same space, only one of them is actaull
 
 ### Tyeps of boxes
 
-- Block-level boxes: they start on a new line and take up the full width available
-- Inline boxes: they do not start on a new line and they only take up as much width as they need. As ineline boxes, they can not create any vertical space.
+-   Block-level boxes: they start on a new line and take up the full width available
+-   Inline boxes: they do not start on a new line and they only take up as much width as they need. As ineline boxes, they can not create any vertical space.
 
 ![types_of_boxes](./notes_img/types_of_boxes.png)
 
@@ -251,22 +258,22 @@ CSS has five main positioning modes, each of which provides different ways to po
 
 1. **Static Positioning** (`position: static`)
 
-   - This is the default positioning mode. Elements are placed according to the natural flow of the document, from top to bottom. Static elements are not affected by `top`, `right`, `bottom`, or `left` properties.
+    - This is the default positioning mode. Elements are placed according to the natural flow of the document, from top to bottom. Static elements are not affected by `top`, `right`, `bottom`, or `left` properties.
 
 2. **Relative Positioning** (`position: relative`)
 
-   - In this mode, an element is positioned relative to its original, static position. Setting values for `top`, `right`, `bottom`, or `left` will offset the element relative to where it would normally be, but the original space in the document flow is still reserved.
+    - In this mode, an element is positioned relative to its original, static position. Setting values for `top`, `right`, `bottom`, or `left` will offset the element relative to where it would normally be, but the original space in the document flow is still reserved.
 
 3. **Absolute Positioning** (`position: absolute`)
 
-   - The element is removed from the document flow and positioned relative to its nearest positioned ancestor (an ancestor with a `position` other than `static`). If there’s no such ancestor, it’s positioned relative to the initial containing block (usually the `<html>` element). Absolute positioning allows precise control over placement but removes the element from the regular document flow.
+    - The element is removed from the document flow and positioned relative to its nearest positioned ancestor (an ancestor with a `position` other than `static`). If there’s no such ancestor, it’s positioned relative to the initial containing block (usually the `<html>` element). Absolute positioning allows precise control over placement but removes the element from the regular document flow.
 
 4. **Fixed Positioning** (`position: fixed`)
 
-   - Similar to absolute positioning, but the element is positioned relative to the viewport, not any container. This means it stays in the same place on the screen even when scrolling. Fixed positioning is often used for elements like navigation bars or side panels that need to remain visible.
+    - Similar to absolute positioning, but the element is positioned relative to the viewport, not any container. This means it stays in the same place on the screen even when scrolling. Fixed positioning is often used for elements like navigation bars or side panels that need to remain visible.
 
 5. **Sticky Positioning** (`position: sticky`)
-   - A hybrid between relative and fixed positioning. An element is positioned relative until it reaches a defined scroll position, then it "sticks" in place (fixed) as you scroll. Sticky positioning works well for headers or sections that need to remain visible while scrolling past a certain point.
+    - A hybrid between relative and fixed positioning. An element is positioned relative until it reaches a defined scroll position, then it "sticks" in place (fixed) as you scroll. Sticky positioning works well for headers or sections that need to remain visible while scrolling past a certain point.
 
 Each positioning mode has specific use cases, allowing designers to create a variety of layouts and interactive page elements.
 
