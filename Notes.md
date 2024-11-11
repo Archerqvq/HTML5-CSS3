@@ -27,6 +27,9 @@
   - [The CSS box model](#the-css-box-model)
     - [Element size calculation](#element-size-calculation)
   - [Collaping margins](#collaping-margins)
+  - [Tyeps of boxes](#tyeps-of-boxes)
+  - [Positioning modes](#positioning-modes)
+  - [Pseudo classes and pseudo elements](#pseudo-classes-and-pseudo-elements)
 
 ## HTML
 
@@ -234,3 +237,39 @@ Every element on a webpage can be seen as a rectangular box and each of these bo
 ### Collaping margins
 
 When we have two margins that occupy the same space, only one of them is actaully visible on the page and that is usually the larger of the two.
+
+### Tyeps of boxes
+
+- Block-level boxes: they start on a new line and take up the full width available
+- Inline boxes: they do not start on a new line and they only take up as much width as they need. As ineline boxes, they can not create any vertical space.
+
+![types_of_boxes](./notes_img/types_of_boxes.png)
+
+### Positioning modes
+
+CSS has five main positioning modes, each of which provides different ways to position elements on a webpage:
+
+1. **Static Positioning** (`position: static`)
+
+   - This is the default positioning mode. Elements are placed according to the natural flow of the document, from top to bottom. Static elements are not affected by `top`, `right`, `bottom`, or `left` properties.
+
+2. **Relative Positioning** (`position: relative`)
+
+   - In this mode, an element is positioned relative to its original, static position. Setting values for `top`, `right`, `bottom`, or `left` will offset the element relative to where it would normally be, but the original space in the document flow is still reserved.
+
+3. **Absolute Positioning** (`position: absolute`)
+
+   - The element is removed from the document flow and positioned relative to its nearest positioned ancestor (an ancestor with a `position` other than `static`). If there’s no such ancestor, it’s positioned relative to the initial containing block (usually the `<html>` element). Absolute positioning allows precise control over placement but removes the element from the regular document flow.
+
+4. **Fixed Positioning** (`position: fixed`)
+
+   - Similar to absolute positioning, but the element is positioned relative to the viewport, not any container. This means it stays in the same place on the screen even when scrolling. Fixed positioning is often used for elements like navigation bars or side panels that need to remain visible.
+
+5. **Sticky Positioning** (`position: sticky`)
+   - A hybrid between relative and fixed positioning. An element is positioned relative until it reaches a defined scroll position, then it "sticks" in place (fixed) as you scroll. Sticky positioning works well for headers or sections that need to remain visible while scrolling past a certain point.
+
+Each positioning mode has specific use cases, allowing designers to create a variety of layouts and interactive page elements.
+
+### Pseudo classes and pseudo elements
+
+[The Difference Between Pseudo-Classes and Pseudo-Elements in CSS](https://www.freecodecamp.org/news/the-difference-between-pseudo-classes-and-elements-in-css/)
